@@ -2,6 +2,18 @@
 (() => {
   const $ = s => document.querySelector(s);
   const $$ = s => document.querySelectorAll(s);
+  const offerDate = $('#offer-date');
+  if (offerDate) {
+    const updateOfferDate = () => {
+      const parts = new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Rio_Branco', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+      const date = Object.fromEntries(parts.map(part => [part.type, part.value]));
+      offerDate.textContent = `${date.day}/${date.month}/${date.year}`;
+      offerDate.dateTime = `${date.year}-${date.month}-${date.day}`;
+    };
+    updateOfferDate();
+    setInterval(updateOfferDate, 60000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) updateOfferDate(); });
+  }
   const oferta = window.OFERTA || {};
   if (Number.isFinite(oferta.preco) && oferta.preco > 0) {
     const [reais, centavos] = oferta.preco.toFixed(2).split('.');
