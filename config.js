@@ -1,5 +1,5 @@
-/* Edite apenas estes dados quando o checkout estiver disponível. */
+/* Configuração da oferta e do checkout Cakto. */
 window.OFERTA = Object.freeze({
-  checkoutUrl: '',
+  checkoutUrl: 'https://pay.cakto.com.br/36zeafr_1281746',
   preco: 37.90,
 });

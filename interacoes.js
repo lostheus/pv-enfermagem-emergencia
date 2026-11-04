@@ -10,6 +10,7 @@
   let checkout;
   try { const u = new URL(oferta.checkoutUrl); if (u.protocol === 'https:') checkout = u; } catch {}
   if (checkout) {
+    $$('[data-checkout]').forEach(link => { link.href = checkout.href; });
     $('.plan-note').textContent = 'Arquivos digitais para baixar · Garantia de 7 dias após a compra';
     $('.faq-answer p').textContent = 'Após a confirmação do pagamento, siga as instruções de acesso enviadas pela plataforma ao e-mail informado na compra. Baixe os arquivos para guardar nos seus dispositivos.';
   }
@@ -57,7 +58,7 @@
   });
   const legal = {
     terms: '<h2>Termos de Uso</h2><p>A coleção é um material digital educacional para uso pessoal. A compra não inclui impressão, envio físico, licença de revenda ou redistribuição.</p><p>O conteúdo trata de emergência adulta e tem revisão técnica especializada pendente nesta edição. Não substitui formação, avaliação clínica, prescrição, protocolos locais ou supervisão.</p><p>O pagamento é único de R$ 37,90. Os meios de pagamento, dados do vendedor e canal de atendimento estarão disponíveis no checkout antes da compra.</p><p>A garantia prevista é de sete dias após a compra, com solicitação de reembolso integral pelo canal informado na plataforma.</p>',
-    privacy: '<h2>Política de Privacidade</h2><p>Esta página não possui cadastro, cookies de publicidade ou ferramentas de análise. Dados de pagamento não são coletados aqui.</p><p>As fontes são carregadas do Google Fonts, que recebe dados técnicos de conexão. A hospedagem também pode registrar acessos técnicos para operação e segurança.</p><p>Quando o checkout estiver disponível, os dados necessários à compra serão tratados pela plataforma indicada, conforme a política exibida nela. Parâmetros de origem de campanha podem ser encaminhados ao checkout.</p><p>Para atendimento e solicitações sobre dados de compra, consulte o contato do vendedor na plataforma utilizada.</p>'
+    privacy: '<h2>Política de Privacidade</h2><p>Esta página não possui cadastro, cookies de publicidade ou ferramentas de análise. Dados de pagamento não são coletados aqui.</p><p>As fontes são carregadas do Google Fonts, que recebe dados técnicos de conexão. A hospedagem também pode registrar acessos técnicos para operação e segurança.</p><p>O pagamento e os dados necessários à compra são tratados pela Cakto, conforme a política de privacidade exibida no checkout. Parâmetros de origem de campanha podem ser encaminhados ao checkout.</p><p>Para atendimento e solicitações sobre dados de compra, consulte o contato do vendedor na plataforma utilizada.</p>'
   };
   $$('[data-legal]').forEach(a => a.addEventListener('click',e => {e.preventDefault();$('#legal-content').innerHTML=legal[a.dataset.legal];$('#legal-dialog').showModal();}));
   const slider=$('#comparisonSlider'),handle=$('.comparison-handle');

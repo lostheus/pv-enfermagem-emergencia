@@ -54,3 +54,6 @@ Atualização: os dois carrosséis usam movimento contínuo para a direita, com 
 
 
 Legibilidade revisada em 04/11/2026: descrições em 16px, títulos de cards em 18px, rótulos secundários em 14px e controles com área de toque de ao menos 44px. Hero permite quebra natural no celular. Módulos não comprimem o texto para acomodar selos. As prévias têm ampliação de 2× e 3×, com rolagem interna. O layout continua com a mesma sequência da referência.
+
+
+Checkout ativado em 04/11/2026: https://pay.cakto.com.br/36zeafr_1281746. O link consta em config.js e no href do botão principal, inclusive para navegação sem JavaScript. Parâmetros UTM, src e sck são preservados no redirecionamento.
