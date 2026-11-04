@@ -23,7 +23,7 @@
     location.assign(dest.href);
   }));
   $$('[data-ampliar]').forEach(img => {
-    img.tabIndex = 0;
+    img.tabIndex = img.closest('[data-carousel-clone]') ? -1 : 0;
     img.setAttribute('role','button');
     img.setAttribute('aria-label','Ampliar '+img.alt);
     const open = () => { $('#expanded-image').src=img.src; $('#expanded-image').alt=img.alt; $('#image-dialog').showModal(); };
