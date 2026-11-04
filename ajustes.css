@@ -1,5 +1,4 @@
-/* A composição e a identidade visual estão no CSS original da referência.
-   Este arquivo acrescenta somente diálogos e recursos de acessibilidade. */
+/* Ajustes de interação e leitura sobre a composição da referência. */
 button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid #0b6fc2;outline-offset:5px}
 .carousel-slide img[data-ampliar]{cursor:zoom-in}
 .carousel-track,.real-life-track{transition:none!important;touch-action:pan-y}
@@ -20,3 +19,95 @@ dialog .close{position:sticky;top:0;float:right;margin:0 0 12px 16px;border:1px 
 .legal-content p{font-size:13px;margin:12px 0}
 .comparison-handle:focus-visible{outline:3px solid #f4b51c;outline-offset:5px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Escala de leitura: descrições 16px, títulos dos cards 18px e rótulos 14px.
+   Os seletores abaixo prevalecem sobre os utilitários de 9–14px da referência. */
+html{ -webkit-text-size-adjust:100%;text-size-adjust:100% }
+body p,body p[class],body .reading-copy{font-size:16px!important;line-height:1.7!important}
+body .text-xs{font-size:14px!important;line-height:1.6!important}
+body [class*="text-[9px]"],body [class*="text-[10px]"],body [class*="text-[11px]"]{font-size:14px!important;line-height:1.5!important}
+body h4,body h4[class]{font-size:18px!important;line-height:1.4!important;letter-spacing:-.015em}
+body h3.text-sm{font-size:18px!important;line-height:1.4!important}
+body .reading-copy strong{display:block;font-size:18px!important;line-height:1.4!important;margin-bottom:8px}
+body .reading-copy{color:#34465c}
+.card-clean p{margin-top:10px}
+.hero p{font-size:18px!important;line-height:1.7!important}
+.hero-proof{padding:14px 18px;gap:14px;flex-wrap:wrap;border-radius:20px}
+.hero-proof>span{font-size:14px!important;line-height:1.55!important}
+.hero-proof strong{display:block;margin-bottom:3px}
+.hero-proof br{display:none}
+.hero-bottom-item{font-size:15px;white-space:normal;line-height:1.5}
+.top-offer-bar{font-size:13px;line-height:1.5;letter-spacing:.02em}
+.module-card{flex-direction:column;align-items:flex-start;gap:15px}
+.module-card>div{min-width:0;width:100%}
+.module-card>span{font-size:14px!important}
+#bonus h3{font-size:21px;line-height:1.35}
+#bonus .border-t{gap:10px;flex-wrap:wrap;align-items:flex-start}
+#bonus .border-t span{font-size:14px;line-height:1.5}
+.bg-escuro p,.bg-escuro p[class]{color:#e1e9f4!important}
+.bg-escuro [class*="text-white/"]{color:#e1e9f4}
+.real-life-caption{font-size:16px;line-height:1.5;padding:30px 16px 16px;background:linear-gradient(to top,rgba(5,27,56,.97),rgba(5,27,56,.7) 70%,transparent)}
+.comparison-badge{font-size:14px;padding:8px 15px}
+.carousel-pause{font-size:14px;min-height:44px;padding:10px 17px}
+.carousel-control,.real-life-control{min-width:44px;min-height:44px}
+.plan-tag{font-size:14px;line-height:1.6;letter-spacing:.05em}
+.plan-badge{font-size:13px;letter-spacing:.02em;white-space:normal;max-width:94%;width:max-content;text-align:center;line-height:1.5}
+.plan-title{font-size:28px;line-height:1.3}
+.plan-total,.plan-economy{font-size:16px;line-height:1.6}
+.plan-includes{gap:18px}
+.plan-includes li,.plan-includes li span,.plan-includes li div{font-size:16px!important;line-height:1.65!important}
+.plan-includes strong{font-size:17px!important;line-height:1.5!important}
+.plan-includes li ul{margin-top:10px}
+.plan-includes li ul li{margin-bottom:9px}
+.plan-note,.guarantee-seal{font-size:15px!important;line-height:1.6!important}
+.faq-question{font-size:17px;line-height:1.5;gap:16px;padding:22px 24px;text-align:left}
+.faq-question svg{flex-shrink:0}
+.faq-answer p{padding:0 24px 24px!important}
+.btn{line-height:1.45;min-height:52px}
+.message-dialog p,.legal-content p{font-size:16px!important;line-height:1.7!important}
+.message-dialog .btn{font-size:15px}
+#rodape p,#rodape p[class],#rodape a{font-size:14px!important;line-height:1.75!important}
+#rodape a{display:inline-flex;align-items:center;min-height:44px}
+.preview-open{display:block;margin:-16px auto 38px;padding:12px 20px;border:1px solid #0b6fc2;background:#fff;border-radius:999px;color:#082b57;font-size:15px;font-weight:700;cursor:pointer;min-height:44px}
+#image-dialog{overflow:hidden}
+.image-scroll{clear:both;overflow:auto;max-height:76vh;overscroll-behavior:contain}
+#image-dialog .image-scroll img{max-width:none;min-width:100%;width:100%;height:auto}
+.image-zoom{background:#082b57;color:#fff;border:0;border-radius:8px;padding:10px 16px;min-height:44px;font-size:15px;font-weight:700;cursor:pointer;margin-bottom:12px}
+@media(max-width:767px){
+  .container{padding-left:20px;padding-right:20px}
+  section{padding-top:60px;padding-bottom:60px}
+  .hero{padding-top:32px;padding-bottom:36px}
+  .hero .container{padding-left:18px;padding-right:18px}
+  .hero h1{font-size:clamp(26px,6.8vw,34px);line-height:1.3;letter-spacing:-.025em;text-wrap:balance}
+  .hero h1 .mobile-line{display:inline;white-space:normal}
+  .hero h1 .grifado{white-space:normal;display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .hero p{font-size:17px!important}
+  .hero .btn{font-size:15px;padding:17px 18px;width:100%;max-width:400px}
+  .hero-proof{border-radius:18px;max-width:100%;gap:12px;padding:14px 12px}
+  .hero-proof>span{flex:1;min-width:170px}
+  .hero-proof>.w-px{display:none}
+  .hero-bottom-bar-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 14px}
+  .hero-bottom-item{font-size:14px;align-items:flex-start}
+  .hero-bottom-item svg{margin-top:3px}
+  .top-offer-bar{font-size:12px;line-height:1.6;padding:10px 16px}
+  .section-title{font-size:28px;line-height:1.3;margin-bottom:34px}
+  #revisao ul>li{padding:20px 16px;gap:12px}
+  #revisao .reading-copy{font-size:16px!important;line-height:1.7!important}
+  #revisao .mt-12 .rounded-2xl{padding:28px 22px}
+  #revisao .mt-12 p{text-align:left}
+  #revisao .mt-12 h3{font-size:24px;line-height:1.35;margin-bottom:16px}
+  #uso .p-4,#uso .sm\:p-5{padding:22px 18px}
+  #uso h4{margin-bottom:10px}
+  .card-clean{padding:24px 20px}
+  #bonus .grid{gap:28px}
+  #bonus .p-5{padding:24px 20px}
+  #bonus .border-t{padding-top:16px}
+  .plan-card.highlight{padding:42px 22px 30px}
+  .plan-title{font-size:26px}
+  .plan-btn-wrapper .btn{font-size:15px;padding:17px 12px}
+  .faq-question{font-size:16px;padding:20px}
+  .faq-answer p{padding:0 20px 22px!important}
+  #fechamento h2{font-size:28px;line-height:1.35}
+  #fechamento .btn{font-size:15px;padding:17px 16px}
+  #rodape .font-title{font-size:17px;line-height:1.5}
+}

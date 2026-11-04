@@ -22,11 +22,32 @@
     });
     location.assign(dest.href);
   }));
+  let imageScale = 1;
+  const zoomButton = $('#image-zoom');
+  function resetImageZoom() {
+    imageScale = 1;
+    $('#expanded-image').style.width = '100%';
+    if (zoomButton) zoomButton.textContent = 'Ampliar 2×';
+    const scroll = $('.image-scroll');
+    if (scroll) { scroll.scrollTop = 0; scroll.scrollLeft = 0; }
+  }
+  function openImage(src, alt) {
+    $('#expanded-image').src = src;
+    $('#expanded-image').alt = alt;
+    resetImageZoom();
+    $('#image-dialog').showModal();
+  }
+  if (zoomButton) zoomButton.addEventListener('click', () => {
+    imageScale = imageScale === 3 ? 1 : imageScale + 1;
+    $('#expanded-image').style.width = imageScale * 100 + '%';
+    zoomButton.textContent = imageScale === 3 ? 'Voltar ao tamanho inicial' : 'Ampliar ' + (imageScale + 1) + '×';
+  });
+  $$('[data-open-map]').forEach(button => button.addEventListener('click', () => openImage(button.dataset.openMap, 'Mapa 041: hipoglicemia e hiperglicemia')));
   $$('[data-ampliar]').forEach(img => {
     img.tabIndex = img.closest('[data-carousel-clone]') ? -1 : 0;
     img.setAttribute('role','button');
     img.setAttribute('aria-label','Ampliar '+img.alt);
-    const open = () => { $('#expanded-image').src=img.src; $('#expanded-image').alt=img.alt; $('#image-dialog').showModal(); };
+    const open = () => openImage(img.src, img.alt);
     img.addEventListener('click',open);
     img.addEventListener('keydown',e => { if (e.key==='Enter'||e.key===' ') {e.preventDefault();open();} });
   });

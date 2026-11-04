@@ -51,3 +51,6 @@ Referência de estrutura e paleta: https://pv-guia-nutri-concursos.vercel.app/
 
 
 Atualização: os dois carrosséis usam movimento contínuo para a direita, com ciclos sem salto, pausa, setas e arraste. Arquivo: `carrosseis.js`. A faixa do topo usa três fotos ilustrativas de perfil, sem atribuir depoimentos ou avaliação a essas pessoas. Origem: Random User Generator, retratos women/47, women/32 e women/44; cópias locais WebP de 80 × 80 pixels.
+
+
+Legibilidade revisada em 04/11/2026: descrições em 16px, títulos de cards em 18px, rótulos secundários em 14px e controles com área de toque de ao menos 44px. Hero permite quebra natural no celular. Módulos não comprimem o texto para acomodar selos. As prévias têm ampliação de 2× e 3×, com rolagem interna. O layout continua com a mesma sequência da referência.
