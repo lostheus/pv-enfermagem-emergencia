@@ -1,0 +1,18 @@
+/* A composição e a identidade visual estão no CSS original da referência.
+   Este arquivo acrescenta somente diálogos e recursos de acessibilidade. */
+button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid #0b6fc2;outline-offset:5px}
+.carousel-slide img[data-ampliar]{cursor:zoom-in}
+dialog{border:1px solid #dce5ef;border-radius:18px;max-width:calc(100% - 28px);padding:25px;color:#16314b;box-shadow:0 20px 60px #0004}
+dialog::backdrop{background:#03172de0;backdrop-filter:blur(4px)}
+dialog .close{position:sticky;top:0;float:right;margin:0 0 12px 16px;border:1px solid #dce5ef;background:white;border-radius:50%;width:44px;height:44px;font-size:24px;z-index:2;color:#082b57;cursor:pointer}
+#image-dialog{padding:10px;background:#edf3fa;max-height:95vh;width:min(850px,calc(100% - 24px))}
+#image-dialog img{width:100%;display:block;height:auto}
+.message-dialog{width:500px;padding:30px;background:white}
+.message-dialog h2{font-size:24px;padding-top:14px;clear:both;font-weight:800;color:#082b57}
+.message-dialog p{font-size:14px;line-height:1.7;margin-top:18px;color:#475467}
+.message-dialog .btn{margin-top:24px;font-size:13px}
+.legal-content{clear:both;max-width:650px}
+.legal-content h2{font-size:25px;margin-bottom:18px}
+.legal-content p{font-size:13px;margin:12px 0}
+.comparison-handle:focus-visible{outline:3px solid #f4b51c;outline-offset:5px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}

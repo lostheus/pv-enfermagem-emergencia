@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>60 Mapas Visuais de Enfermagem na Emergência | @estudaanapaula</title>
+<meta content="60 mapas visuais para revisar enfermagem na emergência adulta. Seis módulos e quatro bônus. Pacote digital por R$ 37,90." name="description"/>
+<meta content="#082B57" name="theme-color"/>
+
+
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          title: ['Montserrat', 'sans-serif'],
+        },
+        extend: {
+          colors: {
+            brand: {
+              dark: '#082B57',
+              darker: '#051B38',
+              card: '#0E3B75',
+              teal: '#0B6FC2',
+              blue: '#0B6FC2',
+              amber: '#F4B51C',
+              amberHover: '#D99B08',
+              green: '#168A50',
+              red: '#D92332',
+              lightBg: '#F4F7FB',
+              slate: '#475467',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+
+    :root {
+      --primary: #082B57;
+      --primary-rgb: 8, 43, 87;
+      --primary-light: #0B6FC2;
+      --primary-light-rgb: 11, 111, 194;
+      
+      --accent: #F4B51C;
+      --accent-rgb: 244, 181, 28;
+      --accent-hover: #D99B08;
+
+      --success: #168A50;
+      --success-rgb: 22, 138, 80;
+      --danger: #D92332;
+      
+      --bg-escuro: #082B57;
+      --bg-escuro-card: #0E3B75;
+      
+      --bg-claro: #F4F7FB;
+      --bg-claro-card: #FFFFFF;
+      
+      --text-slate: #475467;
+      --white: #FFFFFF;
+      
+      --font-title: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* UNIFICAÇÃO RIGOROSA DE FONTES */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+
+    html, body {
+      font-family: 'Inter', sans-serif !important;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: var(--bg-claro);
+      color: var(--text-slate);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    h1 span, h2 span, h3 span,
+    .font-title,
+    .section-title,
+    .section-title span,
+    .plan-title,
+    .plan-price,
+    .plan-badge,
+    .btn,
+    .faq-question,
+    .plan-tag,
+    .plan-group-title {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    /* BLOCOS ESCUROS */
+    .bg-escuro {
+      background-color: var(--bg-escuro);
+      color: #E2E8F0;
+      border-bottom: 1px solid rgba(var(--primary-light-rgb), 0.25);
+    }
+    .bg-escuro h1, .bg-escuro h2, .bg-escuro h3 {
+      color: var(--white);
+    }
+    .bg-escuro span.highlight {
+      color: var(--accent);
+      font-weight: 800;
+      position: relative;
+      display: inline-block;
+    }
+    .bg-escuro span.highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: rgba(var(--accent-rgb), 0.22);
+      z-index: -1;
+      border-radius: 4px;
+    }
+    .bg-escuro p {
+      color: #CBD5E1;
+    }
+
+    /* BLOCOS CLAROS */
+    .bg-claro {
+      background-color: var(--bg-claro);
+      color: var(--text-slate);
+      border-bottom: 1px solid rgba(var(--primary-rgb), 0.07);
+    }
+    .bg-claro h2, .bg-claro h3 {
+      color: var(--primary);
+    }
+    .bg-claro span.highlight {
+      color: var(--primary-light);
+      font-weight: 800;
+      position: relative;
+      display: inline-block;
+    }
+    .bg-claro span.highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: rgba(var(--primary-light-rgb), 0.14);
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    /* SEÇÕES & CONTAINER */
+    section {
+      padding: 90px 0;
+      position: relative;
+    }
+    @media (max-width: 768px) {
+      section {
+        padding: 55px 0;
+      }
+    }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* TÍTULOS DE SEÇÃO */
+    .section-title {
+      font-size: 2.35rem;
+      text-align: center;
+      margin-bottom: 3.2rem;
+      position: relative;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 52px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-light), var(--accent));
+      margin: 1rem auto 0;
+      border-radius: 2px;
+      box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.25);
+    }
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.85rem;
+        margin-bottom: 2.2rem;
+      }
+    }
+
+    /* BOTÕES & PULSE */
+    .center-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.8rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #169B62, #12784B);
+      color: #FFFFFF;
+      font-family: var(--font-title);
+      font-weight: 800;
+      font-size: 1.08rem;
+      padding: 18px 38px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(22, 138, 80, 0.35), 0 3px 0 #0D5936;
+      transition: var(--transition);
+      text-align: center;
+      letter-spacing: 0.02em;
+      white-space: normal;
+      text-decoration: none;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #1BB372, #168A50);
+      box-shadow: 0 10px 26px rgba(22, 138, 80, 0.45), 0 3px 0 #0D5936;
+      color: #FFFFFF;
+    }
+    .btn-pulse {
+      position: relative;
+      overflow: hidden;
+      animation: buttonPulse 2.5s infinite;
+    }
+    @keyframes buttonPulse {
+      0% { box-shadow: 0 0 0 0 rgba(22, 138, 80, 0.5), 0 3px 0 #0D5936; }
+      70% { box-shadow: 0 0 0 16px rgba(22, 138, 80, 0), 0 3px 0 #0D5936; }
+      100% { box-shadow: 0 0 0 0 rgba(22, 138, 80, 0), 0 3px 0 #0D5936; }
+    }
+
+    /* HERO CLARO EDITORIAL EMOLDURADO PELAS 2 BARRAS AZUL-MARINHO */
+    .hero {
+      padding-top: 52px;
+      padding-bottom: 52px;
+      background: radial-gradient(circle at top center, #EAF5FF 0%, #FAF9F5 70%);
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.15rem;
+      line-height: 1.18;
+      max-width: 960px;
+      margin: 0 auto 1.4rem;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+      color: var(--primary);
+      text-wrap: balance;
+    }
+    .mobile-line {
+      display: inline;
+    }
+    .hero-mockup-wrapper {
+      max-width: 680px;
+      margin: 1.6rem auto;
+    }
+    .hero-mockup-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: none;
+      box-shadow: none;
+      border-radius: 14px;
+      filter: drop-shadow(0 18px 32px rgba(8, 43, 87, 0.18));
+      transition: var(--transition);
+      max-height: 470px;
+      object-fit: contain;
+    }
+    .hero-mockup-image:hover {
+      transform: translateY(-2px);
+    }
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 720px;
+      margin: 1.3rem auto 0;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--text-slate);
+    }
+    .hero p strong {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 24px;
+        padding-bottom: 28px;
+      }
+      .hero .container {
+        padding: 0 10px;
+      }
+      .hero h1 {
+        font-size: clamp(1.15rem, 5.25vw, 1.62rem);
+        line-height: 1.32;
+        letter-spacing: -0.03em;
+        margin: 0 auto 0.9rem;
+        max-width: 100%;
+        text-align: center;
+      }
+      .hero h1 .grifado {
+        padding: 1px 4px;
+      }
+      .mobile-line {
+        display: block;
+        white-space: nowrap;
+      }
+      .hero p {
+        font-size: 0.95rem;
+        margin: 1rem auto 0;
+      }
+      .hero-mockup-wrapper {
+        margin: 0.9rem auto !important;
+      }
+      .hero .btn {
+        padding: 15px 26px;
+        font-size: 0.96rem;
+      }
+    }
+
+    /* CARROSSEL PREMIUM DE MAPAS */
+    .carousel-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 2rem auto 1rem;
+      max-width: 1100px;
+    }
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      border-radius: var(--radius-md);
+      position: relative;
+      padding: 10px 0;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+      cursor: grab;
+      user-select: none;
+    }
+    .carousel-track:active {
+      cursor: grabbing;
+    }
+    .carousel-slide {
+      flex-shrink: 0;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    @media(min-width: 768px) {
+      .carousel-slide { width: 50%; }
+    }
+    @media(min-width: 992px) {
+      .carousel-slide { width: 33.333%; }
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      box-shadow: 0 15px 35px -10px rgba(8, 43, 87, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: block;
+      transition: var(--transition);
+      background: #FFFFFF;
+    }
+    .carousel-slide img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 1px solid rgba(8, 43, 87, 0.12);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      z-index: 20;
+      transition: var(--transition);
+    }
+    .carousel-control:hover {
+      background: var(--accent);
+      color: #082B57;
+      transform: translateY(-50%) scale(1.08);
+    }
+    .carousel-control.prev { left: -16px; }
+    .carousel-control.next { right: -16px; }
+    @media (max-width: 767px) {
+      .carousel-control.prev { left: 4px; background: rgba(255,255,255,0.92); width: 40px; height: 40px; }
+      .carousel-control.next { right: 4px; background: rgba(255,255,255,0.92); width: 40px; height: 40px; }
+    }
+    .carousel-dots-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1.2rem;
+    }
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .carousel-dot.active {
+      background: var(--accent);
+      width: 22px;
+      border-radius: 4px;
+    }
+
+    /* CARDS GERAIS */
+    .card-clean {
+      background: #FFFFFF;
+      border: 1px solid rgba(8, 43, 87, 0.08);
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 24px rgba(8, 43, 87, 0.05);
+      transition: var(--transition);
+    }
+    .card-clean:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px -10px rgba(8, 43, 87, 0.14);
+      border-color: rgba(var(--primary-light-rgb), 0.3);
+    }
+
+    /* BLOCO DE OFERTA */
+    .plan-card.highlight {
+      background: var(--white);
+      border: 2.5px solid var(--accent);
+      border-radius: var(--radius-lg);
+      padding: 44px 30px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 20px 45px -5px rgba(var(--accent-rgb), 0.22);
+      transition: var(--transition);
+    }
+    .plan-card.highlight:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 25px 50px -5px rgba(var(--accent-rgb), 0.3);
+    }
+    @media (max-width: 640px) {
+      .plan-card.highlight {
+        padding: 34px 16px;
+      }
+      .plan-btn-wrapper .btn {
+        padding: 16px 14px;
+        font-size: 1.02rem;
+      }
+    }
+    .plan-badge {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+      color: #082B57;
+      font-family: var(--font-title);
+      font-weight: 800;
+      font-size: 0.8rem;
+      padding: 6px 20px;
+      border-radius: 50px;
+      letter-spacing: 0.05em;
+      box-shadow: 0 4px 14px rgba(var(--accent-rgb), 0.35);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .plan-tag {
+      font-family: var(--font-title) !important;
+      font-size: 0.78rem;
+      font-weight: 800 !important;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .plan-title {
+      font-family: var(--font-title) !important;
+      font-size: 1.6rem;
+      font-weight: 900 !important;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.025em;
+      color: var(--primary);
+      line-height: 1.25;
+    }
+    .plan-subtitle {
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-slate);
+      margin-bottom: 1.5rem;
+      line-height: 1.45;
+    }
+    .plan-mockup-wrapper {
+      position: relative;
+      width: 100%;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      background: transparent;
+    }
+    .plan-mockup-img {
+      width: 100%;
+      max-width: 480px;
+      max-height: 380px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      border-radius: 12px;
+      filter: drop-shadow(0 15px 30px rgba(8, 43, 87, 0.16));
+      transition: var(--transition);
+    }
+    .plan-card:hover .plan-mockup-img {
+      transform: scale(1.02);
+    }
+    .plan-includes {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 1.8rem;
+      flex-grow: 1;
+    }
+    .plan-includes li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text-slate);
+      line-height: 1.45;
+    }
+    .plan-includes li i, .plan-includes li svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--primary-light);
+    }
+    .bonus-item {
+      font-weight: 600;
+    }
+    .bonus-item i, .bonus-item svg {
+      color: var(--accent) !important;
+    }
+    .bonus-highlight {
+      color: var(--primary-light);
+      font-weight: 700;
+    }
+    .plan-total {
+      text-align: center;
+      color: var(--text-slate);
+      font-size: 0.88rem;
+      margin-bottom: 4px;
+    }
+    .plan-price {
+      font-family: var(--font-title);
+      font-size: 3.8rem;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      letter-spacing: -0.03em;
+    }
+    .plan-price span {
+      font-size: 1.9rem;
+      margin-top: 6px;
+    }
+    .plan-economy {
+      color: var(--success);
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-align: center;
+      margin-bottom: 1.3rem;
+    }
+    .plan-btn-wrapper {
+      margin-top: auto;
+    }
+    .plan-btn-wrapper .btn {
+      width: 100%;
+    }
+    .plan-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-slate);
+      margin-top: 0.85rem;
+      line-height: 1.4;
+    }
+    .guarantee-seal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--text-slate);
+      font-size: 0.84rem;
+      margin-top: 1.3rem;
+      border-top: 1px solid rgba(var(--primary-rgb), 0.08);
+      padding-top: 14px;
+      font-weight: 600;
+    }
+    .guarantee-seal i, .guarantee-seal svg {
+      color: var(--primary-light);
+    }
+
+    /* FAQ ACCORDION */
+    .faq-container {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--bg-escuro-card);
+      border: 1px solid rgba(var(--primary-light-rgb), 0.2);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      padding: 22px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-title);
+      font-weight: 700;
+      font-size: 1.12rem;
+      color: var(--white);
+      text-align: left;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .faq-question i, .faq-question svg {
+      color: var(--accent);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+    .faq-question.active {
+      color: var(--accent);
+      background: rgba(var(--accent-rgb), 0.06);
+    }
+    .faq-question.active i, .faq-question.active svg {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-out;
+    }
+    .faq-answer p {
+      padding: 0 28px 22px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+    }
+    .faq-item:hover {
+      border-color: rgba(var(--accent-rgb), 0.35);
+      box-shadow: 0 10px 25px rgba(var(--accent-rgb), 0.08);
+    }
+
+    /* COMPARADOR INTERATIVO ANTES / DEPOIS */
+    .comparison-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      aspect-ratio: 1024 / 1536;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 45px -12px rgba(8, 43, 87, 0.25), 0 0 0 1px rgba(8, 43, 87, 0.12);
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: ew-resize;
+      touch-action: pan-y;
+      background: #FFFFFF;
+    }
+    .comparison-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .comparison-before img,
+    .comparison-after img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+    .comparison-after {
+      clip-path: polygon(var(--slider-pos, 50%) 0, 100% 0, 100% 100%, var(--slider-pos, 50%) 100%);
+      -webkit-clip-path: polygon(var(--slider-pos, 50%) 0, 100% 0, 100% 100%, var(--slider-pos, 50%) 100%);
+    }
+    .comparison-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: var(--slider-pos, 50%);
+      width: 3px;
+      background: #FFFFFF;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 10;
+    }
+    .comparison-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 46px;
+      height: 46px;
+      background: #FFFFFF;
+      border: 2px solid #082B57;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0B6FC2;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+    }
+    .comparison-container:active .comparison-handle {
+      transform: translate(-50%, -50%) scale(1.12);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      color: var(--accent-hover);
+    }
+    .comparison-badge {
+      position: absolute;
+      bottom: 14px;
+      z-index: 6;
+      background: rgba(8, 43, 87, 0.9);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      color: #FFFFFF;
+      font-family: var(--font-title);
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 6px 16px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      pointer-events: none;
+      letter-spacing: 0.02em;
+    }
+    .badge-before {
+      left: 14px;
+    }
+    .badge-after {
+      right: 14px;
+      background: rgba(11, 111, 194, 0.95);
+    }
+    .comparison-caption {
+      font-size: 1.05rem;
+      color: #10213D;
+      line-height: 1.55;
+    }
+    .comparison-caption strong {
+      color: #082B57;
+    }
+
+    /* TEXTO GRIFADO NA HEADLINE (MARCA-TEXTO AMARELO-OURO EDITORIAL) */
+    .hero h1 span.grifado {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 800 !important;
+      color: var(--primary);
+      background: linear-gradient(104deg, rgba(255, 224, 102, 0) 0.9%, rgba(255, 224, 102, 0.95) 2.4%, rgba(255, 224, 102, 0.85) 5.8%, rgba(255, 224, 102, 0.75) 93%, rgba(255, 224, 102, 0.85) 96%, rgba(255, 224, 102, 0) 98%), linear-gradient(183deg, rgba(255, 224, 102, 0) 0%, rgba(255, 224, 102, 0.4) 7.9%, rgba(255, 224, 102, 0) 15%);
+      padding: 0 6px;
+      border-radius: 6px;
+      border: none;
+      display: inline-block;
+      white-space: nowrap;
+      text-decoration: none;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    /* CARROSSEL VIDA REAL */
+    .real-life-carousel-wrapper {
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+    .real-life-viewport {
+      overflow: hidden;
+      width: 100%;
+      border-radius: 20px;
+      touch-action: pan-y;
+    }
+    .real-life-track {
+      display: flex;
+      transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+      will-change: transform;
+    }
+    .real-life-slide {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 8px 12px;
+      box-sizing: border-box;
+    }
+    @media (min-width: 768px) {
+      .real-life-slide {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    @media (min-width: 992px) {
+      .real-life-slide {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+      }
+    }
+    .real-life-card {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(8, 43, 87, 0.14);
+      border: 1px solid rgba(8, 43, 87, 0.08);
+      background: #FFFFFF;
+      position: relative;
+      user-select: none;
+      -webkit-user-drag: none;
+      transition: var(--transition);
+    }
+    .real-life-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 35px rgba(8, 43, 87, 0.22);
+    }
+    .real-life-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+    .real-life-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 14px 12px;
+      background: linear-gradient(to top, rgba(8, 43, 87, 0.92) 0%, rgba(8, 43, 87, 0) 100%);
+      color: #FFFFFF;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    .real-life-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1.5px solid rgba(8, 43, 87, 0.15);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 25;
+      box-shadow: 0 6px 18px rgba(8, 43, 87, 0.18);
+      transition: var(--transition);
+    }
+    .real-life-control:hover {
+      background: var(--accent);
+      color: #082B57;
+      transform: translateY(-50%) scale(1.08);
+    }
+    .real-life-control.prev { left: -14px; }
+    .real-life-control.next { right: -14px; }
+    @media (max-width: 768px) {
+      .real-life-control.prev { left: 2px; width: 38px; height: 38px; }
+      .real-life-control.next { right: 2px; width: 38px; height: 38px; }
+    }
+    .real-life-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1.2rem;
+    }
+    .real-life-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(8, 43, 87, 0.2);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .real-life-dot.active {
+      background: var(--accent);
+      width: 22px;
+      border-radius: 4px;
+    }
+
+    /* REVEAL ANIMATIONS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: none;
+    }
+    .reveal[data-d="1"] { transition-delay: 0.1s; }
+    .reveal[data-d="2"] { transition-delay: 0.2s; }
+
+    /* BARRA SUPERIOR DE OFERTA E BARRA INFERIOR DO HERO (AZUL-MARINHO OFICIAL #082B57) */
+    .top-offer-bar {
+      background-color: var(--primary);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .top-offer-bar svg {
+      color: var(--accent);
+      fill: var(--accent);
+      flex-shrink: 0;
+    }
+    .hero-bottom-bar {
+      background-color: var(--primary);
+      border-top: 1px solid rgba(8, 43, 87, 0.15);
+      border-bottom: 1px solid rgba(8, 43, 87, 0.15);
+      padding: 16px 0;
+    }
+    .hero-bottom-bar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 14px 38px;
+    }
+    .hero-bottom-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+    .hero-bottom-item svg {
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .top-offer-bar {
+        font-size: 0.66rem;
+        padding: 8px 10px;
+        letter-spacing: 0.03em;
+      }
+      .hero-bottom-bar {
+        padding: 14px 0;
+      }
+      .hero-bottom-bar-inner {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 10px 22px;
+      }
+      .hero-bottom-item {
+        font-size: 0.76rem;
+        gap: 6px;
+      }
+    }
+  </style>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/><script src="config.js"></script><link href="ajustes.css" rel="stylesheet"/></head>
+<body>
+
+<div class="top-offer-bar"><i data-lucide="zap" height="13" width="13"></i><span>60 MAPAS VISUAIS DE ENFERMAGEM NA EMERGÊNCIA · 4 BÔNUS INCLUÍDOS</span></div>
+
+<section class="hero">
+<div class="container">
+<h1>
+<span class="mobile-line">Tenha <span class="grifado">60 mapas visuais</span> prontos</span>
+<span class="mobile-line">para revisar <span class="grifado">enfermagem</span></span>
+<span class="mobile-line"><span class="grifado">na emergência</span>, sem se perder</span>
+<span class="mobile-line">em textos extensos.</span></h1>
+
+<div class="hero-mockup-wrapper">
+<img alt="Coleção digital: 60 Mapas Visuais de Enfermagem na Emergência e quatro bônus" class="hero-mockup-image" fetchpriority="high" src="assets/kit-enfermagem.png"/>
+</div>
+<p>Seis módulos com comparações, esquemas e pontos de atenção para <strong>organizar sua revisão de emergência adulta.</strong> Um tema por página, em PDF para o celular ou impressão em A4.</p>
+<div class="center-btn">
+<a class="btn btn-pulse" href="#comparativo" id="btn-hero-cta">QUERO GARANTIR MEUS MAPAS AGORA →</a>
+</div>
+
+<div class="mt-5 sm:mt-6 inline-flex items-center justify-center gap-2.5 sm:gap-3.5 bg-white border border-slate-200/90 shadow-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-full max-w-full"><div class="flex -space-x-2 shrink-0"><span class="w-8 h-8 rounded-full ring-2 ring-white bg-brand-dark text-brand-amber flex items-center justify-center text-[10px] font-bold">60</span><span class="w-8 h-8 rounded-full ring-2 ring-white bg-brand-teal text-white flex items-center justify-center text-[10px] font-bold">6</span><span class="w-8 h-8 rounded-full ring-2 ring-white bg-brand-amber text-brand-dark flex items-center justify-center text-[10px] font-bold">+4</span></div><div class="w-px h-6 bg-slate-200 shrink-0"></div><span class="text-brand-slate text-[11px] sm:text-xs leading-tight text-left"><strong class="text-brand-dark">60 mapas · 6 módulos · 4 bônus</strong><br/>Material digital pronto para sua revisão</span></div>
+</div>
+</section>
+
+<div class="hero-bottom-bar">
+<div class="container hero-bottom-bar-inner">
+<div class="hero-bottom-item">
+<i data-lucide="book-open" height="16" width="16"></i>
+<span>60 Mapas + 4 Bônus</span>
+</div>
+<div class="hero-bottom-item">
+<i data-lucide="list-checks" height="16" width="16"></i>
+<span>6 Módulos de Enfermagem</span>
+</div>
+<div class="hero-bottom-item">
+<i data-lucide="printer" height="16" width="16"></i>
+<span>Imprimível e no celular</span>
+</div>
+<div class="hero-bottom-item">
+<i data-lucide="zap" height="16" width="16"></i>
+<span>PDF para baixar</span>
+</div>
+</div>
+</div>
+
+<section class="bg-claro">
+<div class="container">
+<h2 class="section-title">O conteúdo de emergência é extenso. <span class="highlight">Sua revisão não precisa ser confusa.</span></h2>
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+<div class="reveal relative flex justify-center">
+<img alt="Cena ilustrativa: enfermeira revisando anotações e livros após o trabalho" class="rounded-2xl shadow-card border border-gray-200 w-full max-w-md object-cover" loading="lazy" src="assets/enfermeira-estudo.png"/>
+</div>
+<div class="reveal">
+<ul class="space-y-3.5">
+<li class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-[#FEECEC] text-[#D92332] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="alert-triangle" height="18" width="18"></i>
+</div>
+<div class="text-xs sm:text-sm leading-relaxed text-brand-slate"><strong class="text-brand-dark block text-sm sm:text-base mb-0.5">Estuda a teoria, mas os conceitos se misturam</strong>Você já viu o assunto, mas na hora de retomar fica difícil diferenciar conceitos próximos e lembrar quais pontos precisam de contexto.</div>
+</li>
+<li class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-[#FEECEC] text-[#D92332] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="alert-triangle" height="18" width="18"></i>
+</div>
+<div class="text-xs sm:text-sm leading-relaxed text-brand-slate"><strong class="text-brand-dark block text-sm sm:text-base mb-0.5">Plantões, aulas e pouco tempo para revisar</strong>Entre trabalho, estágio e estudo, sobra pouco tempo para procurar os temas em livros, cadernos e arquivos espalhados.</div>
+</li>
+<li class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-[#FEECEC] text-[#D92332] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="alert-triangle" height="18" width="18"></i>
+</div>
+<div class="text-xs sm:text-sm leading-relaxed text-brand-slate"><strong class="text-brand-dark block text-sm sm:text-base mb-0.5">Uma dúvida específica vira uma busca longa</strong>Você quer conferir uma diferença, mas precisa voltar a vários parágrafos e comparar anotações de fontes diferentes.</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="mt-12 max-w-2xl mx-auto reveal">
+<div class="rounded-2xl bg-white border-2 border-brand-amber/70 p-6 sm:p-7 text-center shadow-card relative">
+<div class="w-12 h-12 rounded-full bg-brand-amber text-brand-dark flex items-center justify-center mx-auto -mt-13 mb-3 shadow-md ring-4 ring-white">
+<i data-lucide="shield-alert" height="24" width="24"></i>
+</div>
+<h3 class="font-title text-xl sm:text-2xl text-brand-dark mb-2">A culpa não é sua.</h3>
+<p class="text-brand-slate text-sm sm:text-base leading-relaxed">O estudo aprofundado tem seu lugar. Mas retomar o conteúdo não precisa significar ler tudo de novo. <strong class="text-brand-dark">Você pode começar por um tema, visualizar os conceitos e identificar o que merece uma nova revisão.</strong></p>
+</div>
+</div>
+
+<div class="mt-16 pt-6 reveal text-center" id="comparativo" style="scroll-margin-top: 28px;">
+<span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-teal bg-brand-teal/10 px-3.5 py-1.5 rounded-full mb-3">
+<i data-lucide="split" height="14" width="14"></i> Comparativo Interativo
+        </span>
+<h3 class="font-title text-2xl sm:text-3xl text-brand-dark mb-2">O mesmo tema de enfermagem. <span class="highlight">Duas formas de revisar.</span></h3>
+<p class="text-brand-slate text-sm sm:text-base max-w-lg mx-auto mb-8">Arraste o divisor para comparar a organização em texto corrido com uma página real da coleção de mapas visuais.</p>
+<div class="comparison-container" id="comparisonSlider" style="--slider-pos: 50%;">
+
+<div class="comparison-image comparison-before">
+<img alt="Os conceitos do mapa de glicemia apresentados em texto corrido" draggable="false" src="assets/texto-comparativo.svg"/>
+<span class="comparison-badge badge-before">Texto Corrido</span>
+</div>
+
+<div class="comparison-image comparison-after" id="comparisonAfter">
+<img alt="Mapa real 041: hipoglicemia e hiperglicemia" draggable="false" src="assets/previa-glicemia.png"/>
+<span class="comparison-badge badge-after">Mapa Mental</span>
+</div>
+
+<div class="comparison-divider" id="comparisonDivider">
+<div aria-label="Arrastar divisor interativo" class="comparison-handle">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="20">
+<polyline points="8 7 3 12 8 17"></polyline>
+<polyline points="16 7 21 12 16 17"></polyline>
+<line x1="3" x2="21" y1="12" y2="12"></line>
+</svg>
+</div>
+</div>
+</div>
+<p class="comparison-caption text-center text-brand-dark text-base sm:text-lg max-w-xl mx-auto mt-6 leading-relaxed">No mapa, as diferenças aparecem em blocos e comparações. <strong class="font-bold text-brand-dark">Você localiza o tema e segue um roteiro de revisão visual.</strong></p>
+</div>
+</div>
+</section>
+
+<section class="bg-escuro">
+<div class="container">
+<h2 class="section-title">O que muda com o <span class="highlight">Método de Revisão Visual</span></h2>
+<p class="text-center text-white/80 text-sm sm:text-base max-w-xl mx-auto -mt-4 mb-6 leading-relaxed">Um tema por página, com comparações, ilustrações, pontos de observação e perguntas de fixação. Abra o índice, encontre o assunto e retome sua revisão.</p>
+
+<div class="carousel-wrapper reveal">
+<button aria-label="Anterior" class="carousel-control prev">
+<i data-lucide="chevron-left" height="24" width="24"></i>
+</button>
+<div class="carousel-container">
+<div class="carousel-track" id="mapTrack"><div class="carousel-slide"><img alt="Mapa 002: Avaliação inicial pelo ABCDE" data-ampliar="true" loading="lazy" src="assets/mapa-002.png"/></div><div class="carousel-slide"><img alt="Mapa 014: Oxigenação e ventilação" data-ampliar="true" loading="lazy" src="assets/mapa-014.png"/></div><div class="carousel-slide"><img alt="Mapa 023: Choque: conceitos e perfusão" data-ampliar="true" loading="lazy" src="assets/mapa-023.png"/></div><div class="carousel-slide"><img alt="Mapa 032: Escala de Coma de Glasgow" data-ampliar="true" loading="lazy" src="assets/mapa-032.png"/></div><div class="carousel-slide"><img alt="Mapa 041: Hipoglicemia e hiperglicemia" data-ampliar="true" loading="lazy" src="assets/mapa-041.png"/></div><div class="carousel-slide"><img alt="Mapa 045: Balanço hídrico" data-ampliar="true" loading="lazy" src="assets/mapa-045.png"/></div><div class="carousel-slide"><img alt="Mapa 048: Acidose e alcalose" data-ampliar="true" loading="lazy" src="assets/mapa-048.png"/></div><div class="carousel-slide"><img alt="Mapa 059: Passagem de informações pelo SBAR" data-ampliar="true" loading="lazy" src="assets/mapa-059.png"/></div><div class="carousel-slide"><img alt="Mapa 060: Transferência e continuidade" data-ampliar="true" loading="lazy" src="assets/mapa-060.png"/></div></div>
+</div>
+<button aria-label="Próximo" class="carousel-control next">
+<i data-lucide="chevron-right" height="24" width="24"></i>
+</button>
+</div>
+<div class="carousel-dots-container"></div>
+<p class="text-center text-xs text-white/70 mt-3 mb-10 max-w-xl mx-auto">Arraste para visualizar páginas reais da coleção. Toque em uma página para ampliar.</p>
+
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 max-w-5xl mx-auto reveal">
+<div class="p-4 rounded-xl bg-brand-card border border-white/10 text-center sm:text-left">
+<i class="text-brand-amber mb-2 mx-auto sm:mx-0" data-lucide="zap" height="22" width="22"></i>
+<h4 class="text-white font-title text-sm font-bold mb-1">Revisão por Tema</h4>
+<p class="text-xs text-white/70">Abra o índice clicável e escolha o assunto que deseja retomar.</p>
+</div>
+<div class="p-4 rounded-xl bg-brand-card border border-white/10 text-center sm:text-left">
+<i class="text-brand-amber mb-2 mx-auto sm:mx-0" data-lucide="target" height="22" width="22"></i>
+<h4 class="text-white font-title text-sm font-bold mb-1">Comparações Visuais</h4>
+<p class="text-xs text-white/70">Veja conceitos próximos lado a lado, com critérios organizados.</p>
+</div>
+<div class="p-4 rounded-xl bg-brand-card border border-white/10 text-center sm:text-left">
+<i class="text-brand-amber mb-2 mx-auto sm:mx-0" data-lucide="check-square" height="22" width="22"></i>
+<h4 class="text-white font-title text-sm font-bold mb-1">Observação e Contexto</h4>
+<p class="text-xs text-white/70">Retome informações para observar, comunicar e registrar.</p>
+</div>
+<div class="p-4 rounded-xl bg-brand-card border border-white/10 text-center sm:text-left">
+<i class="text-brand-amber mb-2 mx-auto sm:mx-0" data-lucide="clock" height="22" width="22"></i>
+<h4 class="text-white font-title text-sm font-bold mb-1">Perguntas de Fixação</h4>
+<p class="text-xs text-white/70">Confira o que ficou e descubra o que precisa revisar novamente.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-claro" style="padding: 75px 0; border-top: 1px solid rgba(8,43,87,0.06); border-bottom: 1px solid rgba(8,43,87,0.06);">
+<div class="container max-w-5xl mx-auto">
+<div class="text-center mb-10 reveal">
+<span class="inline-block bg-brand-amber text-brand-dark font-title font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-3 shadow-sm">E no seu dia a dia?</span>
+<h2 class="font-title font-extrabold text-3xl sm:text-4xl text-brand-dark mb-2">
+          O material do jeito que você vai usar
+        </h2>
+<p class="text-brand-slate text-sm sm:text-base max-w-md mx-auto">No seu momento de estudo, no celular ou no papel. Arraste para ver as possibilidades.</p>
+</div>
+
+<div class="real-life-carousel-wrapper reveal mb-14">
+<button aria-label="Foto anterior" class="real-life-control prev" id="realLifePrev">
+<i data-lucide="chevron-left" height="22" width="22"></i>
+</button>
+<div class="real-life-viewport" id="realLifeViewport">
+<div class="real-life-track" id="realLifeTrack">
+<div class="real-life-slide">
+<div class="real-life-card">
+<img alt="Mapas impressos na sua pasta de revisão" draggable="false" loading="lazy" src="assets/estudo-impresso.png"/>
+<div class="real-life-caption">Na sua pasta de revisão</div>
+</div>
+</div>
+<div class="real-life-slide">
+<div class="real-life-card">
+<img alt="Mapa visual de enfermagem no celular" draggable="false" loading="lazy" src="assets/estudo-celular.png"/>
+<div class="real-life-caption">No celular, com zoom quando precisar</div>
+</div>
+</div>
+<div class="real-life-slide">
+<div class="real-life-card">
+<img alt="Mapa visual de enfermagem no tablet" draggable="false" loading="lazy" src="assets/estudo-tablet.png"/>
+<div class="real-life-caption">No tablet com suas anotações</div>
+</div>
+</div>
+<div class="real-life-slide">
+<div class="real-life-card">
+<img alt="Mapa visual de enfermagem no notebook" draggable="false" loading="lazy" src="assets/estudo-notebook.png"/>
+<div class="real-life-caption">No notebook para revisar por tema</div>
+</div>
+</div>
+</div>
+</div>
+<button aria-label="Próxima foto" class="real-life-control next" id="realLifeNext">
+<i data-lucide="chevron-right" height="22" width="22"></i>
+</button>
+<div class="real-life-dots" id="realLifeDots"></div>
+</div><p class="text-center text-xs text-brand-slate mt-5">Cenas ilustrativas de uso. Produto digital; dispositivos e impressão não estão incluídos.</p>
+
+<div class="bg-white border border-gray-200/90 rounded-2xl shadow-card p-6 sm:p-10 max-w-4xl mx-auto reveal">
+<h3 class="font-title font-extrabold text-2xl sm:text-3xl text-brand-dark text-center mb-8">
+          Esse material é para você que...
+        </h3>
+<div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
+<div class="p-4 sm:p-5 rounded-xl bg-[#F4F7FB] border border-[#E1E8F0] flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-[#EAF8EF] text-[#168A50] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="check" height="16" stroke-width="3" width="16"></i>
+</div>
+<div>
+<h4 class="font-title font-bold text-base text-brand-dark mb-1">Trabalha, faz plantão e quer revisar</h4>
+<p class="text-xs sm:text-sm text-brand-slate leading-relaxed">Escolha um tema e retome os pontos principais no seu momento de estudo.</p>
+</div>
+</div>
+<div class="p-4 sm:p-5 rounded-xl bg-[#F4F7FB] border border-[#E1E8F0] flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-[#EAF8EF] text-[#168A50] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="check" height="16" stroke-width="3" width="16"></i>
+</div>
+<div>
+<h4 class="font-title font-bold text-base text-brand-dark mb-1">Está na graduação em enfermagem</h4>
+<p class="text-xs sm:text-sm text-brand-slate leading-relaxed">Use os mapas como apoio para os assuntos vistos nas aulas e estágios.</p>
+</div>
+</div>
+<div class="p-4 sm:p-5 rounded-xl bg-[#F4F7FB] border border-[#E1E8F0] flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-[#EAF8EF] text-[#168A50] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="check" height="16" stroke-width="3" width="16"></i>
+</div>
+<div>
+<h4 class="font-title font-bold text-base text-brand-dark mb-1">Se perde entre livros e PDFs extensos</h4>
+<p class="text-xs sm:text-sm text-brand-slate leading-relaxed">Encontre cada assunto pelo índice e revise uma página de cada vez.</p>
+</div>
+</div>
+<div class="p-4 sm:p-5 rounded-xl bg-[#F4F7FB] border border-[#E1E8F0] flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-[#EAF8EF] text-[#168A50] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="check" height="16" stroke-width="3" width="16"></i>
+</div>
+<div>
+<h4 class="font-title font-bold text-base text-brand-dark mb-1">Quer diferenciar conceitos parecidos</h4>
+<p class="text-xs sm:text-sm text-brand-slate leading-relaxed">Compare informações relacionadas sem alternar entre várias anotações.</p>
+</div>
+</div>
+<div class="p-4 sm:p-5 rounded-xl bg-[#F4F7FB] border border-[#E1E8F0] flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-[#EAF8EF] text-[#168A50] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="check" height="16" stroke-width="3" width="16"></i>
+</div>
+<div>
+<h4 class="font-title font-bold text-base text-brand-dark mb-1">Prefere ter o material pronto</h4>
+<p class="text-xs sm:text-sm text-brand-slate leading-relaxed">Receba 60 mapas organizados, sem precisar desenhar seus próprios resumos.</p>
+</div>
+</div>
+<div class="p-4 sm:p-5 rounded-xl bg-[#F4F7FB] border border-[#E1E8F0] flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-[#EAF8EF] text-[#168A50] flex items-center justify-center shrink-0 mt-0.5">
+<i data-lucide="check" height="16" stroke-width="3" width="16"></i>
+</div>
+<div>
+<h4 class="font-title font-bold text-base text-brand-dark mb-1">Gosta de estudar pelo celular ou no papel</h4>
+<p class="text-xs sm:text-sm text-brand-slate leading-relaxed">Leia os PDFs nos seus dispositivos ou imprima em A4 para sua pasta pessoal.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-claro">
+<div class="container">
+<h2 class="section-title">Os 4 pilares de <span class="highlight">cada mapa visual</span> da coleção</h2>
+<div class="reveal flex justify-center mb-10">
+<img alt="Página real da coleção mostrando os blocos da revisão visual" class="w-full max-w-lg rounded-2xl shadow-card border border-gray-200" loading="lazy" src="assets/previa-glicemia.png"/>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal mb-16">
+<div class="card-clean p-5">
+<div class="w-10 h-10 rounded-lg bg-[#082B57] text-[#F4B51C] flex items-center justify-center mb-3">
+<i data-lucide="git-branch" height="20" width="20"></i>
+</div>
+<h4 class="font-title text-base text-brand-dark mb-1">1. Tema e Núcleo Visual</h4>
+<p class="text-xs text-brand-slate leading-relaxed">Número, título e conceito central para localizar o assunto e orientar a revisão.</p>
+</div>
+<div class="card-clean p-5">
+<div class="w-10 h-10 rounded-lg bg-[#EAF5FF] text-[#0B6FC2] border border-[#BBDDFB] flex items-center justify-center mb-3">
+<i data-lucide="calculator" height="20" width="20"></i>
+</div>
+<h4 class="font-title text-base text-brand-dark mb-1">2. Comparação e Contexto</h4>
+<p class="text-xs text-brand-slate leading-relaxed">Conceitos organizados em esquemas, colunas e blocos de observação.</p>
+</div>
+<div class="card-clean p-5">
+<div class="w-10 h-10 rounded-lg bg-[#FEECEC] text-[#D92332] border border-[#F8C7CC] flex items-center justify-center mb-3">
+<i data-lucide="alert-octagon" height="20" width="20"></i>
+</div>
+<h4 class="font-title text-base text-brand-dark mb-1">3. Limites e Fixação</h4>
+<p class="text-xs text-brand-slate leading-relaxed">Lembretes sobre o que não concluir de um dado isolado e perguntas para revisar.</p>
+</div>
+<div class="card-clean p-5">
+<div class="w-10 h-10 rounded-lg bg-[#FFF6D5] text-[#B87D00] border border-[#F5DC82] flex items-center justify-center mb-3">
+<i data-lucide="book-marked" height="20" width="20"></i>
+</div>
+<h4 class="font-title text-base text-brand-dark mb-1">4. Comunicação e Referências</h4>
+<p class="text-xs text-brand-slate leading-relaxed">Pontos para estudar a organização dos registros e referências no material.</p>
+</div>
+</div>
+
+<div class="max-w-5xl mx-auto reveal">
+<div class="text-center mb-8">
+<span class="inline-block bg-[#EAF5FF] text-[#0B6FC2] border border-[#BBDDFB] font-title font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-2">Coleção Completa · 60 Mapas Numerados</span>
+<h3 class="font-title font-extrabold text-2xl sm:text-3xl text-brand-dark">Veja os 6 módulos que você recebe prontos</h3>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"><div class="card-clean p-4 flex items-start justify-between gap-3">
+<div>
+<span class="text-[11px] font-bold text-brand-teal uppercase">Mapas 001 a 010</span>
+<h4 class="font-title font-bold text-sm text-brand-dark mt-0.5">Avaliação inicial</h4>
+<p class="text-xs text-brand-slate mt-1">ABCDE, sinais vitais, perfusão, reavaliação e organização do registro.</p>
+</div>
+<span class="bg-brand-dark text-brand-amber font-title font-bold text-xs px-2.5 py-1 rounded-full shrink-0">10 mapas</span>
+</div><div class="card-clean p-4 flex items-start justify-between gap-3">
+<div>
+<span class="text-[11px] font-bold text-brand-teal uppercase">Mapas 011 a 020</span>
+<h4 class="font-title font-bold text-sm text-brand-dark mt-0.5">Respiração e oxigenação</h4>
+<p class="text-xs text-brand-slate mt-1">Dispneia, oxigenação, ventilação, dispositivos e comunicação.</p>
+</div>
+<span class="bg-brand-dark text-brand-amber font-title font-bold text-xs px-2.5 py-1 rounded-full shrink-0">10 mapas</span>
+</div><div class="card-clean p-4 flex items-start justify-between gap-3">
+<div>
+<span class="text-[11px] font-bold text-brand-teal uppercase">Mapas 021 a 030</span>
+<h4 class="font-title font-bold text-sm text-brand-dark mt-0.5">Circulação e monitorização</h4>
+<p class="text-xs text-brand-slate mt-1">Pressão, pulso, choque, monitorização e conceitos de ressuscitação.</p>
+</div>
+<span class="bg-brand-dark text-brand-amber font-title font-bold text-xs px-2.5 py-1 rounded-full shrink-0">10 mapas</span>
+</div><div class="card-clean p-4 flex items-start justify-between gap-3">
+<div>
+<span class="text-[11px] font-bold text-brand-teal uppercase">Mapas 031 a 040</span>
+<h4 class="font-title font-bold text-sm text-brand-dark mt-0.5">Avaliação neurológica</h4>
+<p class="text-xs text-brand-slate mt-1">Consciência, Glasgow, pupilas, AVC e observação neurológica.</p>
+</div>
+<span class="bg-brand-dark text-brand-amber font-title font-bold text-xs px-2.5 py-1 rounded-full shrink-0">10 mapas</span>
+</div><div class="card-clean p-4 flex items-start justify-between gap-3">
+<div>
+<span class="text-[11px] font-bold text-brand-teal uppercase">Mapas 041 a 050</span>
+<h4 class="font-title font-bold text-sm text-brand-dark mt-0.5">Alterações metabólicas</h4>
+<p class="text-xs text-brand-slate mt-1">Glicemia, hidratação, balanço, eletrólitos e resposta sistêmica.</p>
+</div>
+<span class="bg-brand-dark text-brand-amber font-title font-bold text-xs px-2.5 py-1 rounded-full shrink-0">10 mapas</span>
+</div><div class="card-clean p-4 flex items-start justify-between gap-3">
+<div>
+<span class="text-[11px] font-bold text-brand-teal uppercase">Mapas 051 a 060</span>
+<h4 class="font-title font-bold text-sm text-brand-dark mt-0.5">Trauma e continuidade</h4>
+<p class="text-xs text-brand-slate mt-1">Observações no trauma, movimentação, SBAR e transferência.</p>
+</div>
+<span class="bg-brand-dark text-brand-amber font-title font-bold text-xs px-2.5 py-1 rounded-full shrink-0">10 mapas</span>
+</div></div>
+</div>
+</div>
+</section>
+
+<section class="bg-escuro">
+<div class="container">
+<h2 class="section-title">E junto com seus mapas você recebe <span class="highlight">4 Bônus Incluídos</span></h2>
+<p class="text-center text-sm text-white/80 max-w-xl mx-auto -mt-6 mb-12">Quatro materiais de apoio para organizar sua revisão e retomar os conceitos da coleção. Todos fazem parte do pacote.</p>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+
+<div class="bg-brand-card rounded-2xl overflow-hidden border border-white/10 shadow-card flex flex-col justify-between">
+<div>
+<div class="p-4 bg-black/20 flex items-center justify-center" style="aspect-ratio: 1/1;">
+<img alt="Capa ilustrativa: Rota de Revisão em 7 Dias" class="w-full h-full object-contain p-1 transition-transform duration-300 hover:scale-105 drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)]" loading="lazy" src="assets/capa-bonus-rota.png"/>
+</div>
+<div class="p-5">
+<span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brand-amber border border-dashed border-brand-amber/50 px-2.5 py-0.5 rounded-full mb-2">Bônus 01</span>
+<h3 class="text-base sm:text-lg text-white font-title mb-1.5">Rota de Revisão em 7 Dias</h3>
+<p class="text-xs text-white/75 leading-relaxed">Uma sequência sugerida pelos seis módulos e uma revisão integrada para orientar seus próximos estudos.</p>
+</div>
+</div>
+<div class="p-5 pt-0 border-t border-white/10 mt-3 flex justify-between items-center text-xs"><span class="text-white/60">Sem cobrança adicional</span><span class="text-brand-amber font-bold text-sm">INCLUÍDO</span></div>
+</div>
+
+<div class="bg-brand-card rounded-2xl overflow-hidden border border-white/10 shadow-card flex flex-col justify-between">
+<div>
+<div class="p-4 bg-black/20 flex items-center justify-center" style="aspect-ratio: 1/1;">
+<img alt="Capa ilustrativa: Guia de Uso e Limites" class="w-full h-full object-contain p-1 transition-transform duration-300 hover:scale-105 drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)]" loading="lazy" src="assets/capa-bonus-guia.png"/>
+</div>
+<div class="p-5">
+<span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brand-amber border border-dashed border-brand-amber/50 px-2.5 py-0.5 rounded-full mb-2">Bônus 02</span>
+<h3 class="text-base sm:text-lg text-white font-title mb-1.5">Guia de Uso e Limites</h3>
+<p class="text-xs text-white/75 leading-relaxed">Orientações para navegar no material e relacionar seu estudo à formação, às referências e aos protocolos.</p>
+</div>
+</div>
+<div class="p-5 pt-0 border-t border-white/10 mt-3 flex justify-between items-center text-xs"><span class="text-white/60">Sem cobrança adicional</span><span class="text-brand-amber font-bold text-sm">INCLUÍDO</span></div>
+</div>
+
+<div class="bg-brand-card rounded-2xl overflow-hidden border border-white/10 shadow-card flex flex-col justify-between">
+<div>
+<div class="p-4 bg-black/20 flex items-center justify-center" style="aspect-ratio: 1/1;">
+<img alt="Capa ilustrativa: 12 Cartões de Revisão" class="w-full h-full object-contain p-1 transition-transform duration-300 hover:scale-105 drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)]" loading="lazy" src="assets/capa-bonus-cartoes.png"/>
+</div>
+<div class="p-5">
+<span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brand-amber border border-dashed border-brand-amber/50 px-2.5 py-0.5 rounded-full mb-2">Bônus 03</span>
+<h3 class="text-base sm:text-lg text-white font-title mb-1.5">12 Cartões de Revisão</h3>
+<p class="text-xs text-white/75 leading-relaxed">Perguntas e respostas derivadas dos mapas para revisar os mesmos conceitos em outro formato.</p>
+</div>
+</div>
+<div class="p-5 pt-0 border-t border-white/10 mt-3 flex justify-between items-center text-xs"><span class="text-white/60">Sem cobrança adicional</span><span class="text-brand-amber font-bold text-sm">INCLUÍDO</span></div>
+</div>
+
+<div class="bg-brand-card rounded-2xl overflow-hidden border border-white/10 shadow-card flex flex-col justify-between">
+<div>
+<div class="p-4 bg-black/20 flex items-center justify-center" style="aspect-ratio: 1/1;">
+<img alt="Capa ilustrativa: Glossário de Siglas" class="w-full h-full object-contain p-1 transition-transform duration-300 hover:scale-105 drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)]" loading="lazy" src="assets/capa-bonus-glossario.png"/>
+</div>
+<div class="p-5">
+<span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brand-amber border border-dashed border-brand-amber/50 px-2.5 py-0.5 rounded-full mb-2">Bônus 04</span>
+<h3 class="text-base sm:text-lg text-white font-title mb-1.5">Glossário de Siglas</h3>
+<p class="text-xs text-white/75 leading-relaxed">As siglas usadas no material com significado e indicação dos temas em que aparecem.</p>
+</div>
+</div>
+<div class="p-5 pt-0 border-t border-white/10 mt-3 flex justify-between items-center text-xs"><span class="text-white/60">Sem cobrança adicional</span><span class="text-brand-amber font-bold text-sm">INCLUÍDO</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-claro">
+<div class="container">
+<h2 class="section-title">O que você encontra <span class="highlight">nos mapas da coleção</span></h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal"><div class="card-clean p-5"><div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-full bg-brand-dark text-brand-amber flex items-center justify-center font-title font-bold">01</div><h3 class="font-title font-bold text-brand-dark text-sm">Comparações lado a lado</h3></div><p class="text-xs text-brand-slate leading-relaxed">Conceitos próximos organizados com critérios paralelos para retomar as diferenças na revisão.</p></div><div class="card-clean p-5"><div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-full bg-brand-dark text-brand-amber flex items-center justify-center font-title font-bold">02</div><h3 class="font-title font-bold text-brand-dark text-sm">Blocos que orientam a leitura</h3></div><p class="text-xs text-brand-slate leading-relaxed">Tema, esquema central, contexto, limites e perguntas de fixação distribuídos na mesma página.</p></div><div class="card-clean p-5"><div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-full bg-brand-dark text-brand-amber flex items-center justify-center font-title font-bold">03</div><h3 class="font-title font-bold text-brand-dark text-sm">Organização de ponta a ponta</h3></div><p class="text-xs text-brand-slate leading-relaxed">60 mapas numerados, seis módulos, índice clicável e quatro bônus que fazem parte desta edição.</p></div></div>
+</div>
+</section>
+
+<section class="bg-claro" id="planos">
+<div class="container" id="oferta">
+<h2 class="section-title">Tenha acesso à <span class="highlight">Coleção Completa</span></h2>
+<p class="text-center text-brand-slate text-sm sm:text-base max-w-2xl mx-auto -mt-6 mb-12">Receba os 60 mapas visuais de enfermagem na emergência e todos os quatro bônus em um único pacote digital. Pagamento único, sem mensalidade.</p>
+<div class="text-center mb-8">
+<div class="inline-flex items-center gap-2 text-xs text-brand-dark font-semibold bg-[#EAF5FF] border border-[#BBDDFB] px-4 py-1.5 rounded-full">
+<i class="text-brand-teal" data-lucide="shield-check" height="15" width="15"></i>
+<span>Emergência adulta · Seis módulos · Material educacional de revisão</span>
+</div>
+</div>
+<div class="max-w-xl mx-auto reveal">
+
+<div class="plan-card highlight" id="plano-completo">
+<div class="plan-badge">Pacote Completo · Pagamento Único</div>
+<div class="plan-tag" style="color: var(--primary-light);">60 Mapas Visuais + 4 Bônus</div>
+<h3 class="plan-title">60 Mapas Visuais de Enfermagem na Emergência</h3>
+<p class="plan-subtitle">Sua revisão de emergência adulta em seis módulos visuais, com comparações, esquemas e perguntas de fixação.</p>
+<div class="plan-mockup-wrapper">
+<img alt="Kit digital completo de enfermagem com 60 mapas e quatro bônus" class="plan-mockup-img" loading="lazy" src="assets/kit-enfermagem.png"/>
+</div>
+<ul class="plan-includes my-6"><li class="!items-start"><i class="text-brand-teal shrink-0 mt-0.5" data-lucide="check" height="18" width="18"></i><div class="w-full"><strong class="text-brand-dark block mb-2 text-sm sm:text-base">60 Mapas Visuais em 6 Módulos:</strong><ul class="space-y-1.5 pl-1 text-xs sm:text-sm text-brand-slate"><li class="flex items-center gap-2"><i class="text-brand-amber shrink-0" data-lucide="chevron-right" height="14" width="14"></i><span>Avaliação inicial (10 mapas)</span></li><li class="flex items-center gap-2"><i class="text-brand-amber shrink-0" data-lucide="chevron-right" height="14" width="14"></i><span>Respiração e oxigenação (10 mapas)</span></li><li class="flex items-center gap-2"><i class="text-brand-amber shrink-0" data-lucide="chevron-right" height="14" width="14"></i><span>Circulação e monitorização (10 mapas)</span></li><li class="flex items-center gap-2"><i class="text-brand-amber shrink-0" data-lucide="chevron-right" height="14" width="14"></i><span>Avaliação neurológica (10 mapas)</span></li><li class="flex items-center gap-2"><i class="text-brand-amber shrink-0" data-lucide="chevron-right" height="14" width="14"></i><span>Alterações metabólicas (10 mapas)</span></li><li class="flex items-center gap-2"><i class="text-brand-amber shrink-0" data-lucide="chevron-right" height="14" width="14"></i><span>Trauma e continuidade (10 mapas)</span></li></ul></div></li><li class="bonus-item"><i data-lucide="gift" height="18" width="18"></i><span><span class="bonus-highlight">Bônus 1:</span> Rota de Revisão em 7 Dias</span></li><li class="bonus-item"><i data-lucide="gift" height="18" width="18"></i><span><span class="bonus-highlight">Bônus 2:</span> Guia de Uso e Limites</span></li><li class="bonus-item"><i data-lucide="gift" height="18" width="18"></i><span><span class="bonus-highlight">Bônus 3:</span> 12 Cartões de Revisão</span></li><li class="bonus-item"><i data-lucide="gift" height="18" width="18"></i><span><span class="bonus-highlight">Bônus 4:</span> Glossário de Siglas</span></li><li><i data-lucide="check" height="18" width="18"></i><span>PDF completo navegável + seis PDFs por módulo</span></li><li><i data-lucide="check" height="18" width="18"></i><span>60 mapas em PNG para baixar · Leitura digital e impressão A4</span></li></ul>
+<div class="plan-total">Pacote completo, com os quatro bônus incluídos:</div>
+<div class="plan-price">R$ 37<span>,90</span></div>
+<div class="plan-economy">Pagamento único · Sem mensalidade</div>
+<div class="plan-btn-wrapper">
+<a class="btn btn-pulse" data-checkout="true" href="#checkout" id="btn-checkout-principal">QUERO MEU ACESSO POR R$ 37,90</a>
+</div>
+<p class="plan-note">Checkout em preparação · Garantia de 7 dias após a compra</p>
+<div class="guarantee-seal">
+<i data-lucide="shield-check" height="18" width="18"></i>
+<span>Garantia Incondicional de 7 Dias</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-escuro text-center">
+<div class="container max-w-2xl mx-auto reveal">
+<div class="w-16 h-16 rounded-full bg-brand-card border-3 border-brand-amber flex flex-col items-center justify-center text-white mx-auto shadow-md mb-4" style="border: 2px solid var(--accent);">
+<span class="font-title font-bold text-xl text-brand-amber leading-none">7</span>
+<span class="text-[9px] font-bold tracking-widest text-white">DIAS</span>
+</div>
+<h2 class="text-xl sm:text-2xl text-white font-title mb-2">Garantia incondicional de 7 dias</h2>
+<p class="text-xs sm:text-sm text-white/80 leading-relaxed mb-5 max-w-lg mx-auto">Conheça os 60 mapas visuais e os quatro bônus. Se decidir que o material não é para você, solicite o reembolso integral em até sete dias após a compra pelo canal informado no checkout e nas instruções de acesso.</p>
+<div class="inline-flex items-center gap-2 text-xs font-semibold text-brand-amber bg-white/5 border border-white/10 px-4 py-2 rounded-full"><i data-lucide="shield-check" height="14" width="14"></i> Garantia de 7 dias após a compra</div>
+</div>
+</section>
+
+<section class="bg-escuro" style="border-top: 1px solid rgba(255,255,255,0.08);">
+<div class="container">
+<h2 class="section-title">Perguntas Frequentes</h2>
+<div class="faq-container reveal">
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">1. Como vou receber o material?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>Após a confirmação do pagamento, siga as instruções de acesso enviadas pela plataforma ao e-mail informado na compra. O checkout desta página ainda está em preparação.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">2. O que está incluído no pacote de R$ 37,90?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>O PDF completo com 60 mapas, seis PDFs por módulo com os mesmos mapas, 60 imagens individuais e os quatro bônus: Rota de Revisão em 7 Dias, Guia de Uso e Limites, 12 Cartões de Revisão e Glossário de Siglas.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">3. Para quem são os mapas de enfermagem?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>Para enfermeiras e estudantes de enfermagem que buscam um apoio visual de estudo e revisão de emergência adulta. Pediatria e obstetrícia não fazem parte desta edição.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">4. Posso imprimir ou ler pelo celular?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>Sim. Os arquivos têm formato A4 e podem ser impressos. No celular, use um leitor de PDF e amplie a página para ler os detalhes. Tablet e computador permitem visualizar uma área maior.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">5. O conteúdo tem revisão técnica especializada?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>A revisão técnica especializada permanece pendente nesta edição. O material é educacional e traz referências. Não substitui formação, avaliação clínica, prescrição, protocolos institucionais ou supervisão apropriada.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">6. Os mapas substituem livros, aulas ou protocolos?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>Não. Eles são um apoio visual para retomar conceitos. Relacione o estudo à sua formação, às fontes e aos protocolos aplicáveis ao contexto profissional.</p>
+</div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">7. É assinatura? Posso guardar os arquivos?<i data-lucide="chevron-down" height="22" width="22"></i></button>
+<div class="faq-answer">
+<p>O pagamento é único de R$ 37,90, sem mensalidade. Você pode baixar os arquivos e guardar nos seus dispositivos para uso pessoal. A compra não inclui licença para revenda ou redistribuição.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-escuro text-center py-16" style="background: radial-gradient(circle at center, #0E3B75 0%, #051B38 100%); border-top: 1px solid rgba(255,255,255,0.08);">
+<div class="container max-w-2xl mx-auto reveal">
+<div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-amber mb-3">
+<i data-lucide="award" height="14" width="14"></i> Estude com inteligência visual
+      </div>
+<h2 class="text-2xl sm:text-3xl text-white font-title mb-3">Sua próxima revisão pode ser mais simples. <span class="highlight">Comece pelo tema que você precisa retomar.</span></h2>
+<p class="text-white/80 text-sm sm:text-base mb-6 max-w-lg mx-auto leading-relaxed">Troque a busca entre anotações soltas por 60 mapas visuais organizados em seis módulos de enfermagem na emergência adulta, prontos para seu momento de estudo.</p>
+<a class="btn btn-pulse w-full max-w-md mx-auto" href="#planos">
+        QUERO GARANTIR MEU ACESSO AGORA
+      </a>
+<p class="text-xs text-white/60 mt-4">Material digital · Quatro bônus incluídos · Garantia de 7 dias</p>
+</div>
+</section>
+
+<section class="bg-claro" style="padding: 50px 0; border-top: 1px solid rgba(8,43,87,0.08); text-align: center; font-size: 0.85rem;">
+<div class="container max-w-3xl mx-auto space-y-3">
+<div class="flex items-center justify-center gap-2 mb-2">
+<i data-lucide="book-open" height="20" style="color: var(--primary);" width="20"></i>
+<span class="font-title font-bold text-brand-dark text-base">60 Mapas Visuais de Enfermagem na Emergência · @estudaanapaula</span>
+</div>
+<p class="text-brand-slate">Copyright © 2026 @estudaanapaula. Todos os direitos reservados.</p>
+<p class="text-xs text-brand-slate/80 leading-relaxed">Material educacional de revisão de emergência adulta. Revisão técnica especializada pendente. Não substitui formação, avaliação clínica, prescrição, protocolos locais ou supervisão. Produto digital; livros e dispositivos nas imagens são ilustrativos.</p>
+<div class="pt-3 flex justify-center gap-4 text-xs font-semibold text-brand-dark">
+<a class="hover:underline" data-legal="terms" href="#terms">Termos de Uso</a>
+<span>·</span>
+<a class="hover:underline" data-legal="privacy" href="#privacy">Política de Privacidade</a>
+</div>
+</div>
+</section>
+<script>
+    // Inicializar os Ícones Lucide
+    if (window.lucide) lucide.createIcons();
+
+    // Accordion do FAQ
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const isActive = button.classList.contains('active');
+
+        document.querySelectorAll('.faq-question').forEach(btn => {
+          btn.classList.remove('active');
+          btn.nextElementSibling.style.maxHeight = null;
+        });
+
+        if (!isActive) {
+          button.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+
+    // Animação de Reveal
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // Carrossel Premium de Mapas (Navegação Manual, Swipe Touch, Dots e AutoPlay)
+    const track = document.getElementById('mapTrack');
+    const prevButton = document.querySelector('.carousel-control.prev');
+    const nextButton = document.querySelector('.carousel-control.next');
+    const dotsContainer = document.querySelector('.carousel-dots-container');
+
+    if (track) {
+      const slides = Array.from(track.children);
+      let currentIndex = 0;
+      let slidesToShow = 3;
+      let autoPlayTimer = null;
+
+      function updateSlidesToShow() {
+        if (window.innerWidth >= 992) {
+          slidesToShow = 3;
+        } else if (window.innerWidth >= 768) {
+          slidesToShow = 2;
+        } else {
+          slidesToShow = 1;
+        }
+      }
+
+      function createDots() {
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        const numDots = Math.max(1, slides.length - slidesToShow + 1);
+        for (let i = 0; i < numDots; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('carousel-dot');
+          if (i === currentIndex) dot.classList.add('active');
+          dot.addEventListener('click', () => {
+            goToSlide(i);
+            resetAutoPlay();
+          });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateCarousel() {
+        updateSlidesToShow();
+        const maxIndex = Math.max(0, slides.length - slidesToShow);
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        const offsetPct = currentIndex * (100 / slidesToShow);
+        track.style.transform = 'translateX(-' + offsetPct + '%)';
+
+        if (dotsContainer) {
+          const dots = Array.from(dotsContainer.children);
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+          });
+        }
+      }
+
+      function goToSlide(index) {
+        const maxIndex = Math.max(0, slides.length - slidesToShow);
+        if (index > maxIndex) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = maxIndex;
+        } else {
+          currentIndex = index;
+        }
+        updateCarousel();
+      }
+
+      if (nextButton) {
+        nextButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          goToSlide(currentIndex + 1);
+          resetAutoPlay();
+        });
+      }
+
+      if (prevButton) {
+        prevButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          goToSlide(currentIndex - 1);
+          resetAutoPlay();
+        });
+      }
+
+      // Suporte a Swipe no Mobile
+      let startX = 0;
+      let isSwiping = false;
+
+      track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isSwiping = true;
+      }, { passive: true });
+
+      track.addEventListener('touchmove', (e) => {
+        if (!isSwiping) return;
+        const diff = startX - e.touches[0].clientX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) {
+            goToSlide(currentIndex + 1);
+          } else {
+            goToSlide(currentIndex - 1);
+          }
+          isSwiping = false;
+          resetAutoPlay();
+        }
+      }, { passive: true });
+
+      track.addEventListener('touchend', () => {
+        isSwiping = false;
+      });
+
+      // Suporte a Drag com Mouse no Desktop
+      let isMouseDown = false;
+      let mouseStartX = 0;
+
+      track.addEventListener('mousedown', (e) => {
+        isMouseDown = true;
+        mouseStartX = e.clientX;
+      });
+
+      window.addEventListener('mouseup', (e) => {
+        if (!isMouseDown) return;
+        isMouseDown = false;
+        const diff = mouseStartX - e.clientX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) {
+            goToSlide(currentIndex + 1);
+          } else {
+            goToSlide(currentIndex - 1);
+          }
+          resetAutoPlay();
+        }
+      });
+
+      // AutoPlay a cada 4 segundos com pausa em hover
+      function startAutoPlay() {
+        if (autoPlayTimer) clearInterval(autoPlayTimer);
+        autoPlayTimer = setInterval(() => {
+          goToSlide(currentIndex + 1);
+        }, 4000);
+      }
+
+      function resetAutoPlay() {
+        startAutoPlay();
+      }
+
+      const wrapper = document.querySelector('.carousel-wrapper');
+      if (wrapper) {
+        wrapper.addEventListener('mouseenter', () => {
+          if (autoPlayTimer) clearInterval(autoPlayTimer);
+        });
+        wrapper.addEventListener('mouseleave', () => {
+          startAutoPlay();
+        });
+      }
+
+      window.addEventListener('resize', () => {
+        updateSlidesToShow();
+        createDots();
+        updateCarousel();
+      });
+
+      // Inicialização
+      updateSlidesToShow();
+      createDots();
+      updateCarousel();
+      startAutoPlay();
+    }
+
+    // Slider Comparativo Interativo (Texto Corrido vs Mapa Mental)
+    function initComparisonSlider() {
+      const container = document.getElementById('comparisonSlider');
+      if (!container) return;
+
+      let isDragging = false;
+
+      function updateSlider(clientX) {
+        const rect = container.getBoundingClientRect();
+        let posX = clientX - rect.left;
+        let percentage = (posX / rect.width) * 100;
+        if (percentage < 3) percentage = 3;
+        if (percentage > 97) percentage = 97;
+        container.style.setProperty('--slider-pos', percentage.toFixed(2) + '%');
+      }
+
+      container.addEventListener('pointerdown', (e) => {
+        isDragging = true;
+        container.setPointerCapture(e.pointerId);
+        updateSlider(e.clientX);
+      });
+
+      container.addEventListener('pointermove', (e) => {
+        if (!isDragging) return;
+        updateSlider(e.clientX);
+      });
+
+      container.addEventListener('pointerup', (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        try {
+          container.releasePointerCapture(e.pointerId);
+        } catch (err) {}
+      });
+
+      container.addEventListener('pointercancel', () => {
+        isDragging = false;
+      });
+    }
+    initComparisonSlider();
+
+    // Carrossel Vida Real (Swipe Mobile, Drag Desktop, Botoes e Dots)
+    function initRealLifeCarousel() {
+      const track = document.getElementById('realLifeTrack');
+      const prevButton = document.getElementById('realLifePrev');
+      const nextButton = document.getElementById('realLifeNext');
+      const dotsContainer = document.getElementById('realLifeDots');
+      const viewport = document.getElementById('realLifeViewport');
+
+      if (!track) return;
+
+      const slides = Array.from(track.children);
+      let currentIndex = 0;
+      let slidesToShow = 1;
+
+      function updateSlidesToShow() {
+        if (window.innerWidth >= 992) {
+          slidesToShow = 3;
+        } else if (window.innerWidth >= 768) {
+          slidesToShow = 2;
+        } else {
+          slidesToShow = 1;
+        }
+      }
+
+      function getMaxIndex() {
+        return Math.max(0, slides.length - slidesToShow);
+      }
+
+      function createDots() {
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        const maxIndex = getMaxIndex();
+        const numDots = maxIndex + 1;
+
+        if (numDots <= 1) {
+          dotsContainer.style.display = 'none';
+          if (prevButton) prevButton.style.display = 'none';
+          if (nextButton) nextButton.style.display = 'none';
+          return;
+        } else {
+          dotsContainer.style.display = 'flex';
+          if (prevButton) prevButton.style.display = 'flex';
+          if (nextButton) nextButton.style.display = 'flex';
+        }
+
+        for (let i = 0; i < numDots; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('real-life-dot');
+          if (i === currentIndex) dot.classList.add('active');
+          dot.setAttribute('aria-label', 'Ir para foto ' + (i + 1));
+          dot.addEventListener('click', () => {
+            goToSlide(i);
+          });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateCarousel() {
+        updateSlidesToShow();
+        const maxIndex = getMaxIndex();
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        const offsetPct = currentIndex * (100 / slidesToShow);
+        track.style.transform = 'translateX(-' + offsetPct + '%)';
+
+        if (dotsContainer) {
+          const dots = Array.from(dotsContainer.children);
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentIndex);
+          });
+        }
+      }
+
+      function goToSlide(index) {
+        const maxIndex = getMaxIndex();
+        if (maxIndex <= 0) return;
+        if (index > maxIndex) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = maxIndex;
+        } else {
+          currentIndex = index;
+        }
+        updateCarousel();
+      }
+
+      if (nextButton) {
+        nextButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          goToSlide(currentIndex + 1);
+        });
+      }
+
+      if (prevButton) {
+        prevButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          goToSlide(currentIndex - 1);
+        });
+      }
+
+      // Suporte a Swipe Touch no Mobile
+      let startX = 0;
+      let startY = 0;
+      let isSwiping = false;
+
+      const swipeTarget = viewport || track;
+
+      swipeTarget.addEventListener('touchstart', (e) => {
+        if (!e.touches || e.touches.length === 0) return;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        isSwiping = true;
+      }, { passive: true });
+
+      swipeTarget.addEventListener('touchmove', (e) => {
+        if (!isSwiping || !e.touches || e.touches.length === 0) return;
+        const diffX = startX - e.touches[0].clientX;
+        const diffY = startY - e.touches[0].clientY;
+
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 30) {
+          if (diffX > 0) {
+            goToSlide(currentIndex + 1);
+          } else {
+            goToSlide(currentIndex - 1);
+          }
+          isSwiping = false;
+        }
+      }, { passive: true });
+
+      swipeTarget.addEventListener('touchend', () => {
+        isSwiping = false;
+      });
+
+      // Suporte a Drag com Mouse no Desktop
+      let isMouseDown = false;
+      let mouseStartX = 0;
+
+      swipeTarget.addEventListener('mousedown', (e) => {
+        isMouseDown = true;
+        mouseStartX = e.clientX;
+      });
+
+      window.addEventListener('mouseup', (e) => {
+        if (!isMouseDown) return;
+        isMouseDown = false;
+        const diffX = mouseStartX - e.clientX;
+        if (Math.abs(diffX) > 35) {
+          if (diffX > 0) {
+            goToSlide(currentIndex + 1);
+          } else {
+            goToSlide(currentIndex - 1);
+          }
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        updateSlidesToShow();
+        createDots();
+        updateCarousel();
+      });
+
+      updateSlidesToShow();
+      createDots();
+      updateCarousel();
+    }
+    initRealLifeCarousel();
+
+    // Scroll suave do botao Hero para o Comparativo Interativo
+    const heroCta = document.getElementById('btn-hero-cta');
+    if (heroCta) {
+      heroCta.addEventListener('click', function(e) {
+        const target = document.getElementById('comparativo');
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (history.pushState) {
+            history.pushState(null, null, '#comparativo');
+          }
+        }
+      });
+    }
+
+
+ document.querySelectorAll(".faq-question").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".faq-question").forEach(x=>x.setAttribute("aria-expanded",String(x.classList.contains("active"))))}));
+</script>
+<dialog aria-label="Prévia ampliada do material" id="image-dialog"><button aria-label="Fechar prévia" class="close">×</button><img alt="" id="expanded-image"/></dialog><dialog aria-labelledby="checkout-title" class="message-dialog" id="checkout-dialog"><button aria-label="Fechar aviso" class="close">×</button><h2 id="checkout-title">Seu acesso estará disponível em breve.</h2><p>O checkout da coleção ainda está em preparação. Nenhum pagamento foi iniciado. Volte quando a compra estiver disponível.</p><button class="btn close-action">ENTENDI</button></dialog><dialog aria-label="Informações legais" class="message-dialog" id="legal-dialog"><button aria-label="Fechar informações legais" class="close">×</button><div class="legal-content" id="legal-content"></div></dialog><script src="interacoes.js"></script></body>
+</html>
