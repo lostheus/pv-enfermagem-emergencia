@@ -43,7 +43,7 @@ Não envie PDFs pagos nem o ZIP de entrega para a pasta pública. Aqui entram ap
 - Confirmar os dados legais e as condições do checkout contra os termos da página.
 - A edição do produto registra revisão técnica especializada pendente. A página preserva essa informação e não apresenta chancela ou validação clínica.
 
-Os scripts de rastreamento, depoimentos, avaliações e checkout da referência foram excluídos. Os espaços de prova mostram características verificáveis do produto. Nenhuma escassez artificial ou preço anterior foi criado. As imagens usadas na página foram convertidas para WebP em 04/11/2026, com autorização do usuário. Total publicado, incluindo SVG e favicon: **2.392.110 bytes (2,39 MB)**, abaixo do limite de 2,5 MB. Os mapas mantêm 992 × 1403 pixels. Os PNGs originais continuam no repositório e são excluídos da publicação por `assets/*.png` em `.vercelignore`.
+Os scripts de rastreamento, depoimentos, avaliações e checkout da referência foram excluídos. Os espaços de prova mostram características verificáveis do produto. Nenhuma escassez artificial ou preço anterior foi criado. As imagens usadas na página foram convertidas para WebP em 04/11/2026, com autorização do usuário. Total publicado, incluindo SVG e favicon: **2.392.110 bytes (2,39 MB)**, abaixo do limite de 2,5 MB. Os mapas mantêm 992 × 1403 pixels. Os PNGs antigos foram removidos da versão atual do repositório por solicitação do usuário. A pasta assets contém somente as imagens usadas pela página.
 
 As fontes Google, o Tailwind e o Lucide utilizam os carregamentos externos da própria referência. Não é necessário instalar dependências para publicar a página.
 
